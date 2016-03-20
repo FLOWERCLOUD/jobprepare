@@ -78,6 +78,8 @@
     <None Include="ReadMe.txt" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="defaultconstructor_test.h" />
+    <ClInclude Include="overload.h" />
     <ClInclude Include="sizeofclass.h" />
     <ClInclude Include="sizeof_test.h" />
     <ClInclude Include="stdafx.h" />
