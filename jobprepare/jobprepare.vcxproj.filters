@@ -27,6 +27,9 @@
     <ClInclude Include="sizeof_test.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="sizeofclass.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="stdafx.cpp">

@@ -4,9 +4,11 @@
 #include "stdafx.h"
 
 #include "sizeof_test.h"
+#include "sizeofclass.h"
 int _tmain(int argc, _TCHAR* argv[])
 {
-	testSizeof();
+	//testSizeof();  //1.
+	testsizeofclass();
 	return 0;
 }
 

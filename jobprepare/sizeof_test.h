@@ -133,8 +133,10 @@ void testSizeof()
 	}cobj;
 	class D
 	{
-		char m;
+		char m;		
 		int n;
+		char k;
+		
 	}dobj;
 	class D_f
 	{
@@ -155,6 +157,14 @@ void testSizeof()
 		virtual void f1(){};
 		virtual void f2(){};
 	}dd_fvobj;
+	class VirExtend :virtual public D_f
+	{
+
+	}veobj;
+	class VirExtend2 :virtual public D_fv
+	{
+
+	}veobj2;
 
 	cout<<"sizeof(aobj):"<<sizeof(aobj)<<endl; 
 	cout<<"sizeof(aaobj):"<<sizeof(aaobj)<<endl; 
@@ -164,6 +174,8 @@ void testSizeof()
 	cout<<"sizeof(d_fobj):"<<sizeof(d_fobj)<<endl; 
 	cout<<"sizeof(d_fvobj):"<<sizeof(d_fvobj)<<endl; 
 	cout<<"sizeof(dd_fvobj):"<<sizeof(dd_fvobj)<<endl; 
+	cout<<"sizeof(veobj):"<<sizeof(veobj)<<endl; 
+	cout<<"sizeof(veobj2):"<<sizeof(veobj2)<<endl; 
 }
 //}
 
