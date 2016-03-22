@@ -9,10 +9,10 @@
 #include "overload.h"
 int _tmain(int argc, _TCHAR* argv[])
 {
-	//SIZEOFTEST::testSizeof();  //1.
+	SIZEOFTEST::testSizeof();  //1.
 	//SIZEOFCLASS::testsizeofclass(); //2.
 	//DEFAULT_CONSTRUCTOR::defaultconstructortest();//3
-	OVERLOAD::overloadtest();//4
+	//OVERLOAD::overloadtest();//4
 	return 0;
 }
 

@@ -178,7 +178,106 @@ namespace SIZEOFTEST
 		cout<<"sizeof(dd_fvobj):"<<sizeof(dd_fvobj)<<endl; 
 		cout<<"sizeof(veobj):"<<sizeof(veobj)<<endl; 
 		cout<<"sizeof(veobj2):"<<sizeof(veobj2)<<endl; 
+		cout<<endl; 
+		cout<<"content of csapp"<<endl;
+		struct P1{
+			int i;
+			char c;
+			int j;
+			char d;			
+		} p1obj;
+		struct P2{
+			int i;
+			char c;
+			char d;
+			int j;
+		} p2obj;
+		struct P3{
+			short w[3];
+			char c[3];
+		} p3obj;
+		struct P4{
+			short w[3];
+			char* c[3];
+		} p4obj;
+		struct P5{
+			struct P1 a[2];
+			struct P2* P;
+		} p5obj;
+
+		struct P6{
+			char* a;
+			short b;
+			double c;
+			char d;
+			float e;
+			char f;
+			long long g;
+			void *h;
+		}p6obj;
+		struct P7{
+			double c;
+			long long g;
+			float e;
+			char* a;
+			void *h;
+			short b;			
+			char d;			
+			char f;
+		}p7obj;
+		struct P8{			
+			double c;
+			char a;
+			
+		}p8obj;
+		struct P9{	
+			char a;
+			double c;
+		}p9obj;
+		struct k1{
+			int m;
+			char a;
+			char l;
+		}k1obj;
+		struct k2{
+			 struct k1 m;
+			char a;
+		}k2obj;
+		struct k3{
+			struct k2 m;
+			char a;
+		}k3obj;
+		class Basek1{
+			double m;
+			char a;
+		}basek1;
+		class Basek2:public Basek1{
+			char a;
+		}basek2;
+		class Basek3:Basek2{
+			char a;
+		}basek3;
+
+
+		cout<<"sizeof(p1obj):"<<sizeof(p1obj)<<endl; 
+		cout<<"sizeof(p2obj):"<<sizeof(p2obj)<<endl; 
+		cout<<"sizeof(p3obj):"<<sizeof(p3obj)<<endl; 
+		cout<<"sizeof(p4obj):"<<sizeof(p4obj)<<endl; 
+		cout<<"sizeof(p5obj):"<<sizeof(p5obj)<<endl; 
+		cout<<"sizeof(p6obj):"<<sizeof(p6obj)<<endl; 
+		cout<<"sizeof(p7obj):"<<sizeof(p7obj)<<endl; 
+		cout<<"sizeof(p8obj):"<<sizeof(p8obj)<<endl; 
+		cout<<"sizeof(p9obj):"<<sizeof(p9obj)<<endl; 
+		cout<<"sizeof(k1obj):"<<sizeof(k1obj)<<endl; 
+		cout<<"sizeof(k2obj):"<<sizeof(k2obj)<<endl; 
+		cout<<"sizeof(k3obj):"<<sizeof(k3obj)<<endl; 
+		cout<<"sizeof(basek1):"<<sizeof(basek1)<<endl; 
+		cout<<"sizeof(basek2):"<<sizeof(basek2)<<endl; 
+		cout<<"sizeof(basek3):"<<sizeof(basek3)<<endl; 
+
 	}
+
+
 
 
 }
